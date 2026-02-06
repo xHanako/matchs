@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ff4d6d, #b5179e);
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor general */
+.matches {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 40px 60px;
+  justify-content: center;
+}
+
+/* Cada par */
+.match-pair {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Imágenes */
+.match-pair img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  box-shadow: 0 0 22px rgba(255, 105, 135, 0.85);
+}
+
+/* Unión perfecta */
+.match-pair img:first-child {
+  border-radius: 18px 0 0 18px;
+}
+
+.match-pair img:last-child {
+  border-radius: 0 18px 18px 0;
+}
